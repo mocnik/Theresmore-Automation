@@ -66,6 +66,10 @@ const autoPrestige = async () => {
     state.stopAttacks = false
     state.haveManualResourceButtons = true
 
+    const log = localStorage.get('Prestige') || []
+    log.push(new Date().toISOString())
+    localStorage.set('Prestige', log)
+
     await sleep(300)
     prestigeButton.click()
     await sleep(5000)

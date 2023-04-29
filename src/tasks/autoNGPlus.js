@@ -19,6 +19,10 @@ const autoNGPlus = async () => {
   state.stopAttacks = false
   state.haveManualResourceButtons = true
 
+  const log = localStorage.get('NGPlus') || []
+  log.push(new Date().toISOString())
+  localStorage.set('NGPlus', log)
+
   await sleep(300)
   ngButton.click()
   await sleep(5000)
