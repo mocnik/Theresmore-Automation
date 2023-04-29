@@ -1,9 +1,9 @@
 {
-  "name": "Theresmore Automation",
-  "namespace": "github.com/Theresmore-Automation/Theresmore-Automation",
+  "name": "Theresmore Automation - rmocnik",
+  "namespace": "github.com/mocnik/Theresmore-Automation/",
   "match": ["https://www.theresmoregame.com/play/"],
   "license": "MIT",
   "run-at": "document-idle",
-  "downloadURL": "https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js",
-  "updateURL": "https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js"
+  "downloadURL": "https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js",
+  "updateURL": "https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js"
 }

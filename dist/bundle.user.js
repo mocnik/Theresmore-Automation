@@ -1,13 +1,19 @@
 // ==UserScript==
-// @name        Theresmore Automation
+// @name        Theresmore Automation - rmocnik
 // @description Automation suite for Theresmore game
-// @namespace   github.com/Theresmore-Automation/Theresmore-Automation
+// @namespace   github.com/mocnik/Theresmore-Automation/
 // @match       https://www.theresmoregame.com/play/
 // @license     MIT
 // @run-at      document-idle
+<<<<<<< HEAD
 // @downloadURL https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js
 // @updateURL   https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js
 // @version     4.7.2
+=======
+// @downloadURL https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js
+// @updateURL   https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js
+// @version     4.6.1
+>>>>>>> d1513eb (Push my metainfo for tempermonkey)
 // @homepage    https://github.com/Theresmore-Automation/Theresmore-Automation
 // @author      Theresmore Automation team
 // @grant       none
