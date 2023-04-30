@@ -19,9 +19,9 @@ const autoNGPlus = async () => {
   state.stopAttacks = false
   state.haveManualResourceButtons = true
 
-  const log = localStorage.get('NGPlus') || []
-  log.push(new Date().toISOString())
-  localStorage.set('NGPlus', log)
+  const log = localStorage.get('Log') || []
+  log.push({ time: new Date().toISOString(), type: 'NGPlus', legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length })
+  localStorage.set('Log', log)
 
   await sleep(300)
   ngButton.click()

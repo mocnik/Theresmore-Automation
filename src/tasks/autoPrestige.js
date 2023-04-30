@@ -66,9 +66,9 @@ const autoPrestige = async () => {
     state.stopAttacks = false
     state.haveManualResourceButtons = true
 
-    const log = localStorage.get('Prestige') || []
-    log.push(new Date().toISOString())
-    localStorage.set('Prestige', log)
+    const log = localStorage.get('Log') || []
+    log.push({ time: new Date().toISOString(), type: 'Prestige', legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length })
+    localStorage.set('Log', log)
 
     await sleep(300)
     prestigeButton.click()

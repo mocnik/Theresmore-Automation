@@ -5,15 +5,9 @@
 // @match       https://www.theresmoregame.com/play/
 // @license     MIT
 // @run-at      document-idle
-<<<<<<< HEAD
-// @downloadURL https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js
-// @updateURL   https://theresmore-automation.github.io/Theresmore-Automation/dist/bundle.user.js
-// @version     4.7.2
-=======
 // @downloadURL https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js
 // @updateURL   https://github.com/mocnik/Theresmore-Automation/raw/feature/logging/dist/bundle.user.js
 // @version     4.6.1
->>>>>>> d1513eb (Push my metainfo for tempermonkey)
 // @homepage    https://github.com/Theresmore-Automation/Theresmore-Automation
 // @author      Theresmore Automation team
 // @grant       none
@@ -35,7 +29,7 @@ A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYR
 ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 
-const taVersion = "4.7.2";
+const taVersion = "4.6.1.1";
 
 
 (function () {
@@ -3214,81 +3208,6 @@ const taVersion = "4.7.2";
   				type: "cap",
   				id: "army",
   				value: 3
-  			}
-  		]
-  	},
-  	{
-  		id: "boot_camp",
-  		cat: "defense",
-  		tab: 1,
-  		cap: 8,
-  		age: 100,
-  		req: [
-  			{
-  				type: "resource",
-  				id: "gold",
-  				value: 2500,
-  				multi: 1.4
-  			},
-  			{
-  				type: "resource",
-  				id: "iron",
-  				value: 1500,
-  				multi: 1.4
-  			},
-  			{
-  				type: "resource",
-  				id: "tools",
-  				value: 1500,
-  				multi: 1.4
-  			},
-  			{
-  				type: "tech",
-  				id: "boot_camp_t",
-  				value: 1
-  			}
-  		],
-  		gen: [
-  			{
-  				type: "modifier",
-  				type_id: "army",
-  				id: "archer",
-  				type_gen: "stat",
-  				gen: "defense",
-  				value: 1,
-  				perc: false
-  			},
-  			{
-  				type: "modifier",
-  				type_id: "army",
-  				id: "phalanx",
-  				type_gen: "stat",
-  				gen: "defense",
-  				value: 1,
-  				perc: false
-  			},
-  			{
-  				type: "modifier",
-  				type_id: "army",
-  				id: "warrior",
-  				type_gen: "stat",
-  				gen: "defense",
-  				value: 1,
-  				perc: false
-  			},
-  			{
-  				type: "modifier",
-  				type_id: "army",
-  				id: "light_cavarly",
-  				type_gen: "stat",
-  				gen: "defense",
-  				value: 1,
-  				perc: false
-  			},
-  			{
-  				type: "cap",
-  				id: "army",
-  				value: 12
   			}
   		]
   	},
@@ -10925,8 +10844,6 @@ const taVersion = "4.7.2";
   	bui_builders_complex_description: "Like a builder district but with much more space",
   	bui_books: "Books",
   	bui_books_description: "A part of the Library of SouLs",
-  	bui_boot_camp: "Boot Camp",
-  	bui_boot_camp_description: "A strong army will protect Theresmore",
   	bui_canava_trading: "Canava trading post",
   	bui_canava_trading_description: "From neighboring villages a network of markets to generate profit",
   	bui_carpenter_workshop: "Carpenter workshop",
@@ -11483,8 +11400,6 @@ const taVersion = "4.7.2";
   	fai_accept_druid_description: "Accepting the druid and his beliefs as an integral part of our society, he will become high priest",
   	fai_acolyte_hymn: "Acolyte hymn",
   	fai_acolyte_hymn_description: "The chant of the devout rises to the gods",
-  	fai_ancient_spell_p: "Spell of the Ancients",
-  	fai_ancient_spell_p_description: "A spell that will help us progress",
   	fai_army_blessing: "Army blessing",
   	fai_army_faith: "Army of faith",
   	fai_army_faith_description: "Armies of faith will burn our enemies",
@@ -11642,7 +11557,6 @@ const taVersion = "4.7.2";
   	fai_spear_wild_man_description: "The wild man was a great horseman",
   	fai_spell_accept: "Cast this spell",
   	fai_spell_cancel: "Cancel this spell",
-  	fai_spell_ancient: "Spell of the Ancients",
   	fai_study_undead_creatures: "Study of undead creatures",
   	fai_study_undead_creatures_description: "Now that we have defeated those undead we must study their characteristics",
   	fai_summon_nikharul: "Summon Nikharul",
@@ -12251,7 +12165,6 @@ const taVersion = "4.7.2";
   	log_tec_besieging_engineers: "Now we can build the Siege Workshop",
   	log_tec_biology: "Better than servitude?",
   	log_tec_breeding: "We can now train light cavalry, a good and fast assault unit. Now we can build Stable",
-  	log_tec_boot_camp_t: "We can now build the Boot Camp",
   	log_tec_bronze_working: "We can train spearmen and warriors, our army can both defend and attack effectively. Units enter battle in a set order , in front will be the tanks and general melee units to absorb the blows while the firing units will be behind the lines and the last to die. Now we can build Barracks",
   	log_tec_burned_farms: "Farms were burned and all around the fields horribly mangled bodies were scattered. From the tracks it looks like the work of humanoid beings of great size. We must send our scouts",
   	log_tec_canava_mercenary: "Now we can recruit the Canava Guard, an elite mercenary troop from the nearby village",
@@ -12371,7 +12284,6 @@ const taVersion = "4.7.2";
   	log_tec_path_children: "It seems that orcs kidnap children to turn them into their flame casters as adults. We must find Gulud Castle and put an end to this abomination",
   	log_tec_persuade_nobility: "We can now train cataphract",
   	log_tec_persuade_people: "We must find the Eternal Halls and defeat their guardians. Let us unleash our explorers.",
-  	log_tec_phalanx_combat: "We can now recruit Phalanx",
   	log_tec_plate_armor: "We can now recruit man at arms",
   	log_tec_plenty_valley: "Now we can build the Valley of plenty",
   	log_tec_pottery: "By working on the first pieces of craftsmanship, we can create tools. We can build the Artisan workshop",
@@ -12930,8 +12842,6 @@ const taVersion = "4.7.2";
   	tec_alchemist_complex_t_description: "The production of a regular army needs a lot of saltpetre",
   	tec_ancient_balor_t: "Ancient Balor",
   	tec_ancient_balor_t_description: "Summon the Ancient Balor demon",
-  	tec_ancient_spell: "Ancient Spell",
-  	tec_ancient_spell_description: "A spell from the past",
   	tec_archery: "Archery",
   	tec_archery_description: "The bow will allow us to strike from a safe distance",
   	tec_architecture: "Architecture",
@@ -12962,8 +12872,6 @@ const taVersion = "4.7.2";
   	tec_besieging_engineers_description: "With the advent of siege techniques, we can increase the strength of our artillery",
   	tec_biology: "Biology",
   	tec_biology_description: "Theresmore's nature study applied to the lives of citizens",
-  	tec_boot_camp_t: "Boot camp",
-  	tec_boot_camp_t_description: "A place where we can train our soldiers",
   	tec_breeding: "Breeding",
   	tec_breeding_description: "We will have to breed the best horses in Theresmore",
   	tec_bronze_working: "Bronze working",
@@ -13286,8 +13194,6 @@ const taVersion = "4.7.2";
   	tec_path_children_description: "In the citadel of Horith we found disturbing evidence",
   	tec_pentagram_tome: "Demoniac pentagram",
   	tec_pentagram_tome_description: "In the strange village we found a pentagram and a tome written in an obscure language. We must investigate",
-  	tec_phalanx_combat: "Oplitic Phalanx",
-  	tec_phalanx_combat_description: "We will train our men to fight as one!",
   	tec_portal_of_the_dead: "Portal of the dead",
   	tec_portal_of_the_dead_description: "From a place long forgotten and sealed away. Beware the dead guard the passage. Beware",
   	tec_pottery: "Pottery",
@@ -13783,9 +13689,6 @@ const taVersion = "4.7.2";
   	uni_swamp_horror_plural: "Swamp Horrors",
   	uni_ravenous_crab: "Ravenous crab",
   	uni_ravenous_crab_plural: "Ravenous crabs",
-  	uni_phalanx: "Phalanx",
-  	uni_phalanx_description: "A wall of hoplites to counter the enemy",
-  	uni_phalanx_plural: "Phalanxes",
   	uni_pillager: "Pillager",
   	uni_pillager_plural: "Pillagers",
   	uni_priest: "Priest",
@@ -18924,10 +18827,6 @@ const taVersion = "4.7.2";
   			{
   				id: "werewolf",
   				value: 1
-  			},
-  			{
-  				id: "wolf",
-  				value: 130
   			}
   		],
   		gen: [
@@ -18998,10 +18897,6 @@ const taVersion = "4.7.2";
   			{
   				id: "gorgon",
   				value: 1
-  			},
-  			{
-  				id: "naga",
-  				value: 70
   			}
   		],
   		gen: [
@@ -19313,10 +19208,6 @@ const taVersion = "4.7.2";
   			{
   				id: "hydra",
   				value: 1
-  			},
-  			{
-  				id: "giant_snake",
-  				value: 110
   			}
   		],
   		gen: [
@@ -19546,10 +19437,6 @@ const taVersion = "4.7.2";
   			{
   				id: "markanat",
   				value: 1
-  			},
-  			{
-  				id: "giant_spider",
-  				value: 140
   			}
   		],
   		gen: [
@@ -19584,10 +19471,6 @@ const taVersion = "4.7.2";
   			{
   				id: "minotaur",
   				value: 1
-  			},
-  			{
-  				id: "kobold",
-  				value: 210
   			}
   		],
   		gen: [
@@ -21514,22 +21397,6 @@ const taVersion = "4.7.2";
   		]
   	},
   	{
-  		id: "ancient_spell_p",
-  		type: "prayer",
-  		req: [
-  			{
-  				type: "resource",
-  				id: "faith",
-  				value: 1250
-  			},
-  			{
-  				type: "tech",
-  				id: "ancient_spell",
-  				value: 1
-  			}
-  		]
-  	},
-  	{
   		id: "sacred_place",
   		type: "prayer",
   		req: [
@@ -22819,49 +22686,6 @@ const taVersion = "4.7.2";
   				gen: "defense",
   				value: 20,
   				perc: false
-  			}
-  		]
-  	},
-  	{
-  		id: "spell_ancient",
-  		type: "spell",
-  		req: [
-  			{
-  				type: "prayer",
-  				id: "ancient_spell_p",
-  				value: 1
-  			}
-  		],
-  		gen: [
-  			{
-  				type: "resource",
-  				id: "mana",
-  				value: -5
-  			},
-  			{
-  				type: "resource",
-  				id: "food",
-  				value: 3
-  			},
-  			{
-  				type: "resource",
-  				id: "wood",
-  				value: 2
-  			},
-  			{
-  				type: "resource",
-  				id: "stone",
-  				value: 2
-  			},
-  			{
-  				type: "resource",
-  				id: "copper",
-  				value: 1.5
-  			},
-  			{
-  				type: "resource",
-  				id: "iron",
-  				value: 1
   			}
   		]
   	},
@@ -24845,26 +24669,6 @@ const taVersion = "4.7.2";
   		]
   	},
   	{
-  		id: "ancient_spell",
-  		req: [
-  			{
-  				type: "resource",
-  				id: "faith",
-  				value: 1250
-  			},
-  			{
-  				type: "tech",
-  				id: "magic",
-  				value: 1
-  			},
-  			{
-  				type: "stat",
-  				id: "ng_reset",
-  				value: 1
-  			}
-  		]
-  	},
-  	{
   		id: "zenix_familiar_t",
   		req: [
   			{
@@ -25191,46 +24995,6 @@ const taVersion = "4.7.2";
   				id: "fame",
   				value: 25,
   				fix: true
-  			}
-  		]
-  	},
-  	{
-  		id: "phalanx_combat",
-  		req: [
-  			{
-  				type: "resource",
-  				id: "research",
-  				value: 2500
-  			},
-  			{
-  				type: "tech",
-  				id: "warfare",
-  				value: 1
-  			},
-  			{
-  				type: "stat",
-  				id: "ng_reset",
-  				value: 2
-  			}
-  		]
-  	},
-  	{
-  		id: "boot_camp_t",
-  		req: [
-  			{
-  				type: "resource",
-  				id: "research",
-  				value: 3000
-  			},
-  			{
-  				type: "tech",
-  				id: "phalanx_combat",
-  				value: 1
-  			},
-  			{
-  				type: "stat",
-  				id: "ng_reset",
-  				value: 2
   			}
   		]
   	},
@@ -26815,6 +26579,21 @@ const taVersion = "4.7.2";
   			{
   				type: "building",
   				id: "library_souls",
+  				value: 1
+  			}
+  		]
+  	},
+  	{
+  		id: "huge_cave_t",
+  		req: [
+  			{
+  				type: "resource",
+  				id: "research",
+  				value: 26000
+  			},
+  			{
+  				type: "enemy",
+  				id: "huge_cave",
   				value: 1
   			}
   		]
@@ -28554,21 +28333,6 @@ const taVersion = "4.7.2";
   			{
   				type: "tech",
   				id: "seafaring",
-  				value: 1
-  			}
-  		]
-  	},
-  	{
-  		id: "huge_cave_t",
-  		req: [
-  			{
-  				type: "resource",
-  				id: "research",
-  				value: 125000
-  			},
-  			{
-  				type: "enemy",
-  				id: "huge_cave",
   				value: 1
   			}
   		]
@@ -30354,55 +30118,6 @@ const taVersion = "4.7.2";
   				type: "resource",
   				id: "food",
   				value: -0.2
-  			}
-  		]
-  	},
-  	{
-  		id: "phalanx",
-  		type: "army",
-  		attack: 6,
-  		defense: 20,
-  		order: 1,
-  		category: 3,
-  		req: [
-  			{
-  				type: "tech",
-  				id: "phalanx_combat",
-  				value: 1
-  			},
-  			{
-  				type: "resource",
-  				id: "gold",
-  				value: 200
-  			},
-  			{
-  				type: "resource",
-  				id: "wood",
-  				value: 150
-  			},
-  			{
-  				type: "resource",
-  				id: "iron",
-  				value: 150
-  			}
-  		],
-  		reqAttack: [
-  			{
-  				type: "resource",
-  				id: "gold",
-  				value: 30
-  			},
-  			{
-  				type: "resource",
-  				id: "food",
-  				value: 30
-  			}
-  		],
-  		gen: [
-  			{
-  				type: "resource",
-  				id: "food",
-  				value: -0.3
   			}
   		]
   	},
@@ -32995,7 +32710,7 @@ const taVersion = "4.7.2";
     return document.querySelector('#maintabs-container > div > div[role=tabpanel]');
   };
   const getAllButtons$5 = (activeOnly = true, extraSelectors = '') => {
-    const activeOnlySelector = activeOnly ? ':not(.btn-off):not(.btn-off-cap)' : '';
+    const activeOnlySelector = activeOnly ? ':not(.btn-off)' : '';
     return [...getActivePageContent().querySelectorAll(`button.btn${activeOnlySelector}${extraSelectors}`)];
   };
   var selectors = {
@@ -33595,7 +33310,7 @@ const taVersion = "4.7.2";
     return (state.options.pages[CONSTANTS.PAGES.ARMY].enabled || false) && (state.options.pages[CONSTANTS.PAGES.ARMY].subpages[CONSTANTS.SUBPAGES.EXPLORE].enabled || false);
   };
   const getSendToExplore = (container, activeOnly = true) => {
-    const activeOnlySelector = activeOnly ? ':not(.btn-off):not(.btn-off-cap)' : '';
+    const activeOnlySelector = activeOnly ? ':not(.btn-off)' : '';
     return container.querySelector(`button.btn-blue${activeOnlySelector}`);
   };
   const executeAction$9 = async () => {
@@ -34069,7 +33784,7 @@ Estimated damage:
       return {
         id: id,
         count: count,
-        canBuild: !button.classList.toString().includes('btn-off'),
+        canBuild: !button.className.includes('btn-off'),
         ...building
       };
     }).filter(building => building.id);
@@ -34190,7 +33905,7 @@ Estimated damage:
       return {
         id: id,
         count: count,
-        canBuild: !button.classList.toString().includes('btn-off'),
+        canBuild: !button.className.includes('btn-off'),
         ...building
       };
     }).filter(building => building.id);
@@ -35306,7 +35021,7 @@ Estimated damage:
       return;
     }
     const enabledLegacies = getEnabledLegacies();
-    const activeLegacies = buttons.filter(button => !button.classList.contains('btn-red') && !button.classList.toString().includes('btn-off')).map(button => {
+    const activeLegacies = buttons.filter(button => !button.classList.contains('btn-red') && !button.classList.contains('btn-off')).map(button => {
       const id = reactUtil.getNearestKey(button, 6);
       const legacyData = enabledLegacies.find(leg => `leg_${leg.key}` === id);
       if (legacyData) {
@@ -35330,9 +35045,13 @@ Estimated damage:
       state.stopAutoClicking = true;
       state.stopAttacks = false;
       state.haveManualResourceButtons = true;
-      const log = localStorage.get('Prestige') || [];
-      log.push(new Date().toISOString());
-      localStorage.set('Prestige', log);
+      const log = localStorage.get('Log') || [];
+      log.push({
+        time: new Date().toISOString(),
+        type: "Prestige",
+        legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
+      });
+      localStorage.set('Log', log);
       await sleep(300);
       prestigeButton.click();
       await sleep(5000);
@@ -35359,9 +35078,13 @@ Estimated damage:
     state.stopAutoClicking = true;
     state.stopAttacks = false;
     state.haveManualResourceButtons = true;
-    const log = localStorage.get('NGPlus') || [];
-    log.push(new Date().toISOString());
-    localStorage.set('NGPlus', log);
+    const log = localStorage.get('Log') || [];
+    log.push({
+      time: new Date().toISOString(),
+      type: "NGPlus",
+      legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
+    });
+    localStorage.set('Log', log);
     await sleep(300);
     ngButton.click();
     await sleep(5000);
