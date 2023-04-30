@@ -35045,13 +35045,6 @@ Estimated damage:
       state.stopAutoClicking = true;
       state.stopAttacks = false;
       state.haveManualResourceButtons = true;
-      const log = localStorage.get('Log') || [];
-      log.push({
-        time: new Date().toISOString(),
-        type: "Prestige",
-        legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
-      });
-      localStorage.set('Log', log);
       await sleep(300);
       prestigeButton.click();
       await sleep(5000);
@@ -35061,6 +35054,13 @@ Estimated damage:
         await sleep(2000);
         redConfirmButton = [...document.querySelectorAll('#headlessui-portal-root .btn.btn-red')].find(button => reactUtil.getBtnIndex(button, 0) === 1);
       }
+      const log = localStorage.get('Log') || [];
+      log.push({
+        time: new Date().toISOString(),
+        type: 'Prestige',
+        legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
+      });
+      localStorage.set('Log', log);
       state.stopAutoClicking = false;
     }
   };
@@ -35081,7 +35081,7 @@ Estimated damage:
     const log = localStorage.get('Log') || [];
     log.push({
       time: new Date().toISOString(),
-      type: "NGPlus",
+      type: 'NGPlus',
       legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
     });
     localStorage.set('Log', log);
