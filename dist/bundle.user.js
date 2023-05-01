@@ -35048,12 +35048,6 @@ Estimated damage:
       await sleep(300);
       prestigeButton.click();
       await sleep(5000);
-      let redConfirmButton = [...document.querySelectorAll('#headlessui-portal-root .btn.btn-red')].find(button => reactUtil.getBtnIndex(button, 0) === 1);
-      while (redConfirmButton) {
-        redConfirmButton.click();
-        await sleep(2000);
-        redConfirmButton = [...document.querySelectorAll('#headlessui-portal-root .btn.btn-red')].find(button => reactUtil.getBtnIndex(button, 0) === 1);
-      }
       const log = localStorage.get('Log') || [];
       log.push({
         time: new Date().toISOString(),
@@ -35061,6 +35055,12 @@ Estimated damage:
         legacyCount: reactUtil.getGameData().LegacyStore.ownedLegacies.length
       });
       localStorage.set('Log', log);
+      let redConfirmButton = [...document.querySelectorAll('#headlessui-portal-root .btn.btn-red')].find(button => reactUtil.getBtnIndex(button, 0) === 1);
+      while (redConfirmButton) {
+        redConfirmButton.click();
+        await sleep(2000);
+        redConfirmButton = [...document.querySelectorAll('#headlessui-portal-root .btn.btn-red')].find(button => reactUtil.getBtnIndex(button, 0) === 1);
+      }
       state.stopAutoClicking = false;
     }
   };
